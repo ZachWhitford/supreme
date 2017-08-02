@@ -1,4 +1,4 @@
-import requests, json, urllib.parse, time, random, datetime, threading
+import requests, json, urllib, time, random, datetime, threading
 
 # Constant
 base_url = 'http://www.supremenewyork.com'
@@ -202,7 +202,7 @@ def main():
             ],
             interval=1, 
             ghost=1, 
-            proxies={}
+            proxies={localhost}
         ),
         Task(products=[
                 Product(category='accessories', keywords=['hanes', 'socks'], colors=['any'], sizes=['any'], quantity=1)
